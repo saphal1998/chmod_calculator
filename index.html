@@ -1,0 +1,41 @@
+<html>
+
+<head>
+	<title> chmod Calculator </title>
+	<link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+	<h1 class="app-title"> chmod Calculator </h1>
+	<div class="input_container">
+
+		<input id="permissions_text" class="permissions_text" inputmode="numeric" type="text"
+			title="Enter your chmod permissions" placeholder="755" />
+		<p style="display: none;" class="error_message" id="error_text" />
+	</div>
+
+	<div class="permissions">
+		<div class="permissions_row" id="owner">
+			<input class="permissions_box" type="checkbox" id="owner_r" />
+			<input class="permissions_box" type="checkbox" id="owner_w" />
+			<input class="permissions_box" type="checkbox" id="owner_x" />
+			<div id="permissions_owner_text"> Owner text </div>
+		</div>
+		<div class="permissions_row" id="group">
+			<input class="permissions_box" type="checkbox" id="group_r" />
+			<input class="permissions_box" type="checkbox" id="group_w" />
+			<input class="permissions_box" type="checkbox" id="group_x" />
+			<div id="permissions_group_text"> Group text </div>
+		</div>
+		<div class="permissions_row" id="everyone">
+			<input class="permissions_box" type="checkbox" id="everyone_r" />
+			<input class="permissions_box" type="checkbox" id="everyone_w" />
+			<input class="permissions_box" type="checkbox" id="everyone_x" />
+			<div id="permissions_everyone_text"> Everyone text </div>
+		</div>
+	</div>
+</body>
+
+<script src="./chmod_calculator.js"> </script>
+
+</html>
